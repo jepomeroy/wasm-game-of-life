@@ -1,8 +1,8 @@
 [package]
 name = "wasm-game-of-life"
-version = "0.1.0"
-authors = ["Earl Pomeroy <earl.pomeroy42@gmail.com>"]
-edition = "2018"
+version = "0.1.1"
+authors = ["JEPomeroy <earl.pomeroy42@gmail.com>"]
+edition = "2024"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
@@ -25,10 +25,10 @@ console_error_panic_hook = { version = "0.1.6", optional = true }
 # compared to the default allocator's ~10K. It is slower than the default
 # allocator, however.
 wee_alloc = { version = "0.4.5", optional = false }
-web-sys = { version = "0.3.64", features = ['console'] }
+web-sys = { version = "0.3.103", features = ['console'] }
 
 [dev-dependencies]
-wasm-bindgen-test = "0.3.13"
+wasm-bindgen-test = "0.3.76"
 
 [profile.release]
 lto = true

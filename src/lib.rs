@@ -1,5 +1,3 @@
-mod utils;
-
 extern crate fixedbitset;
 extern crate js_sys;
 extern crate web_sys;
@@ -19,7 +17,7 @@ macro_rules! log {
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
-#[cfg(feature = "wee_alloc")]
+#[cfg(feature = "default")]
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 

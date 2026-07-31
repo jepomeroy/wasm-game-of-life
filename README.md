@@ -1,4 +1,4 @@
-# WASM Game of Life implemetation
+# WASM Game of Life implementation
 
 ## Building App
 
